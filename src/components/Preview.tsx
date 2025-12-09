@@ -40,7 +40,7 @@ const Preview = ({ html, css, js }: PreviewProps) => {
       ref={iframeRef}
       title="Preview"
       className="h-full w-full bg-white"
-      sandbox="allow-scripts"
+      sandbox="allow-scripts allow-same-origin"
     />
   );
 };

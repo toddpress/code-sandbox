@@ -115,7 +115,7 @@ const Playground = () => {
   if (isMobile) {
     return (
       <div className="flex h-screen flex-col bg-background">
-        <Header onRun={handleRun} onReset={handleReset} />
+        <Header onRun={handleRun} onReset={handleReset} html={html} css={css} js={js} />
         <Tabs defaultValue="code" className="flex flex-1 flex-col">
           <TabsList className="mx-4 mt-2 grid w-auto grid-cols-2">
             <TabsTrigger value="code" className="flex items-center gap-2">
@@ -151,7 +151,7 @@ const Playground = () => {
 
   return (
     <div className="flex h-screen flex-col bg-background">
-      <Header onRun={handleRun} onReset={handleReset} />
+      <Header onRun={handleRun} onReset={handleReset} html={html} css={css} js={js} />
       <ResizablePanelGroup direction="horizontal" className="flex-1">
         <ResizablePanel defaultSize={50} minSize={30}>
           <div className="flex h-full flex-col">
